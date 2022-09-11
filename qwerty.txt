@@ -1,1 +1,27 @@
-hello
+using System;
+
+namespace HelloApp;
+{
+  class Program 
+  {
+   static void Main (string[] args)
+   {
+    Console.WriteLine ("Введіть перше число");
+     int num1 =Convert.ToInt32(Console.ReadLine());
+     Console.WriteLine ("Введіть друге число");
+     int num2 =Convert.ToInt32(Console.ReadLine());
+
+     if(num1 > num2)
+    {
+       Console.Writeline("Перше число більше другого");
+     }
+       else if(num1 < num2){
+          Console.Writeline("Перше число менше другого");
+       }
+         else{
+             Console.Writeline("Обидва числа рівні");
+         }
+     Console.Readkey();
+  }
+}
+}
